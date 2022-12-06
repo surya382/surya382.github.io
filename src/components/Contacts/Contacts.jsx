@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+
 import { FiAtSign,FiPhone,FiMapPin } from "react-icons/fi";
 
-// import './Contacts.css';
+import {Col} from "react-bootstrap"
 
 
 
@@ -9,8 +9,8 @@ function Contacts() {
    
     return (
         
-            <div className="project-heading">
-                <h1 >Contacts</h1>
+            <Col className="project-heading" style={{marginTop:"160px",marginBottom:"100px"}} >
+                <h1 >Contact <strong className="purple">Me </strong></h1>
                 <div className='contacts-body'>
                   
 
@@ -50,7 +50,7 @@ function Contacts() {
 
                         </div>
 
-                        </div>
+                        </Col>
 
                       
                 

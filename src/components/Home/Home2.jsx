@@ -1,11 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/prof.jpeg";
-// import Tilt from "react-parallax-tilt";
+
+import pdf from "../../Assets/../Assets/Rahul_Suryawanshi_Resume.pdf";
+
+import Button from "react-bootstrap/Button";
+
+
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+ 
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -16,7 +20,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              WHO <span className="purple"> I'AM </span>
             </h1>
 
             
@@ -33,19 +37,44 @@ function Home2() {
              I have a passion to create useful projects and systems which can contribute in everyone's wellbeing.
               I go to full extent in execution.
             </p>
+
+            <div style={{textAlign:"left"}}>
+            <Button
+                      
+            variant="primary"
+            className="butt"
+            
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "100px" }}
+          >
+            
+            Resume
+          </Button>
+             
+          </div>
+
+
           </Col>
+
+
+          
           <Col md={4} className="myAvtar">
             
-              <img src={myImg} style={{borderRadius:"100%",height:"300px",width:"300px"}} className="img-fluid" alt="avatar" />
+              <img src={myImg} style={{borderRadius:"100%",height:"300px",width:"250px"}} className="img-fluid" alt="avatar" />
             
           </Col>
+
+          
+
         </Row>
+                      
+        
+
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>Connect With Me On</h1>
+            
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -57,16 +86,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
+             
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/rahul-suryawanshi-31519821b/"
@@ -77,16 +97,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
+             
             </ul>
           </Col>
         </Row>

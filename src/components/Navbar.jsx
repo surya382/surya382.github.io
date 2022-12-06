@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+
+
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 import {
-  AiFillStar,
+  AiOutlinePhone,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -40,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src="https://document-export.canva.com/8yql4/DAFSrE8yql4/4/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221121T154108Z&X-Amz-Expires=82436&X-Amz-Signature=4cf1d90917849f16684cca215e91ef979823d064f09d1d67c86a4d406f26d796&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2022%20Nov%202022%2014%3A35%3A04%20GMT" style={{width:"100%",borderRadius:"50%"}} className="img-fluid logo" alt="brand" />
+          <img src="https://st2.depositphotos.com/5943796/11433/v/450/depositphotos_114331868-stock-illustration-initial-letter-rs-red-swoosh.jpg" style={{borderRadius:"20px"}} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -106,27 +105,20 @@ function NavBar() {
                 Skills
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
+             
+            <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <AiOutlinePhone
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Contacts
               </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+            </Nav.Item>
+          
           </Nav>
         </Navbar.Collapse>
       </Container>

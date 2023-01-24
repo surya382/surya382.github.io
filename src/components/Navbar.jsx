@@ -2,19 +2,15 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import pdf from "../Assets/../Assets/Rahul_Suryawanshi_Resume.pdf";
 
+import Button from "react-bootstrap/Button";
 
 import { Link } from "react-router-dom";
 
-import {
-  AiOutlinePhone,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-  AiOutlineBook
-} from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -29,6 +25,12 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const downloadResume = async () => {
+    window.open(
+      "https://drive.google.com/file/d/18_4tMaFzOdKjmOrcVCsWR0cx_YLFXImO/view?usp=share_link"
+    );
+  };
 
   return (
     <Navbar
@@ -55,8 +57,10 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                 Home
               </Nav.Link>
+
+              
             </Nav.Item>
 
             <Nav.Item>
@@ -65,7 +69,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                About
               </Nav.Link>
             </Nav.Item>
 
@@ -75,22 +79,12 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                {" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
+           
 
 
             <Nav.Item>
@@ -99,9 +93,7 @@ function NavBar() {
                 to="/skills"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineBook
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                {" "}
                 Skills
               </Nav.Link>
             </Nav.Item>
@@ -112,12 +104,32 @@ function NavBar() {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlinePhone
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                {" "}
                 Contacts
               </Nav.Link>
             </Nav.Item>
+
+           <div style={{marginTop:"5px",marginLeft:"15px"}}>
+            
+            <Button
+                      className="resbut"
+                      variant="primary"
+                     
+                      style={{ maxWidth: "100px" }}
+                    >
+                      <a
+            style={{textDecoration:"none"}}
+            href={pdf}
+            download={true}
+            target={"_blank"}
+            rel="noreferrer"
+            onClick={downloadResume} 
+          >
+            Resume 
+          </a>
+                    </Button>
+            
+           </div>
           
           </Nav>
         </Navbar.Collapse>

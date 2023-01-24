@@ -13,6 +13,9 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+        <Card.Text style={{fontWeight:"bold",color:"teal"}}>
+          {props.stacks}
+        </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
           <div style={{display:"flex",gap:"10px"}}>
          <BsGithub /> 

@@ -473,6 +473,7 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(7, 143, 167, 0.137) ;
   overflow: hidden ;
   transition: all 0.4s ease 0s ;
+  
 }
 
 @media (max-width: 767px) {
@@ -549,39 +550,46 @@ button:focus {
 
 
 .personal-details{
-  
+ 
   display: flex;
+  justify-content: center;
   gap: 20px;
-  
+ 
   text-decoration: none;
   color: black;
 }
 
+.contsec{
+  width: 80%;
+  margin: auto;
+}
+
 @media (max-width: 500px) {
 
- 
+ .contsec{
+  width: 70%;
+  margin: auto;
+  
+ }
 
   .personal-details{
     font-size: 15px;
-    
+    gap: 10px;
   }
 
   
+
+
 
 }
 
 @media (min-width:500px) and  (max-width: 767px) {
 
-  .personal-details{
+   .personal-details{
     font-size: 20px;
   }
 
-  .contacts-body{
-    
-    width: 40%;
-    margin: auto;
-    margin-top: 50px;
-  }
+ 
 
 
 }
@@ -591,6 +599,12 @@ button:focus {
   margin: auto;
   margin-top: 50px;
 }
-  
+ 
+.resbut>a{
+  color:black
+}
 
+.resbut:hover >a{
+  color:white
+}
 

@@ -14,6 +14,13 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+
+  const downloadResume = async () => {
+    window.open(
+      "https://drive.google.com/file/d/18_4tMaFzOdKjmOrcVCsWR0cx_YLFXImO/view?usp=share_link"
+    );
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -40,17 +47,25 @@ function Home2() {
 
             <div style={{textAlign:"left"}}>
             <Button
-                      
+             className="resbut"                     
             variant="primary"
-            className="butt"
-            
-            href={pdf}
-            target="_blank"
+                      
             style={{ maxWidth: "100px" }}
           >
             
-            Resume
+            <a
+            style={{textDecoration:"none"}}
+            href={pdf}
+            download={true}
+            target={"_blank"}
+            rel="noreferrer"
+            onClick={downloadResume}
+          >
+            Resume 
+          </a>
           </Button>
+
+          
              
           </div>
 

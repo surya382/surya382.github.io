@@ -10,7 +10,8 @@ import node from "../../Assets/techlogo/node.svg"
 import react from "../../Assets/techlogo/react.svg"
 import redux from "../../Assets/techlogo/redux.svg"
 import typescript from "../../Assets/techlogo/typescript.svg"
-
+import express from "../../Assets/techlogo/express.svg"
+import nextjs from "../../Assets/techlogo/nextjs.svg"
 
 
 function Techstack() {
@@ -45,6 +46,11 @@ function Techstack() {
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+      <img src={nextjs} alt="mongo" width="100%" height="200px"/>
+        <h4>NEXT JS</h4>
+
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
       <img src={node} alt="node" width="100%" height="200px"/>
         <h4>NODE JS</h4>
       </Col>
@@ -53,6 +59,14 @@ function Techstack() {
         <h4>MONGO DB</h4>
 
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+      <img src={express} alt="mongo" width="100%" height="200px"/>
+        <h4>EXPRESS JS</h4>
+
+      </Col>
+
+      
       
     </Row>
   );

@@ -13,7 +13,7 @@ function About() {
      
       <Container>
        
-        <h1 className="project-heading">
+        <h1 className="project-heading" style={{marginBottom:"25px"}}>
           Professional <strong className="purple">Skillset </strong>
         </h1>
 

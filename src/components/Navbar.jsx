@@ -6,7 +6,7 @@ import pdf from "../Assets/../Assets/Rahul_Suryawanshi_Resume.pdf";
 
 import Button from "react-bootstrap/Button";
 
-import { Link } from "react-router-dom";
+
 
 
 
@@ -15,6 +15,12 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  const scrollToFunction = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    updateExpanded(false);
+  };
+
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -56,7 +62,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link  onClick={() => scrollToFunction("schome")}>
                  Home
               </Nav.Link>
 
@@ -65,9 +71,8 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+                
+                onClick={() => scrollToFunction("schome2")}
               >
                 About
               </Nav.Link>
@@ -75,9 +80,8 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+                
+                onClick={() => scrollToFunction("scproj")}
               >
                 {" "}
                 Projects
@@ -89,9 +93,8 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/skills"
-                onClick={() => updateExpanded(false)}
+               
+                onClick={() => scrollToFunction("scskills")}
               >
                 {" "}
                 Skills
@@ -100,9 +103,8 @@ function NavBar() {
              
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
+                
+                onClick={() => scrollToFunction("sccontact")}
               >
                 {" "}
                 Contacts
@@ -111,12 +113,7 @@ function NavBar() {
 
            <div style={{marginTop:"5px",marginLeft:"15px"}}>
             
-            <Button
-                      className="resbut"
-                      variant="primary"
-                     
-                      style={{ maxWidth: "100px" }}
-                    >
+           
                       <a
             style={{textDecoration:"none"}}
             href={pdf}
@@ -125,9 +122,16 @@ function NavBar() {
             rel="noreferrer"
             onClick={downloadResume} 
           >
+            <Button
+                      className="resbut"
+                      variant="primary"
+                     
+                      style={{ maxWidth: "100px" }}
+                    >
             Resume 
+            </Button>
           </a>
-                    </Button>
+                    
             
            </div>
           

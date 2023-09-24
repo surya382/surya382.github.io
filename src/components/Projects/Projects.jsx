@@ -7,12 +7,15 @@ import modesens from "../../Assets/Projects/modesens.png";
 import jcrew from "../../Assets/Projects/jcrew.png";
 import bonsai from "../../Assets/Projects/bonsai.png";
 import nyresa from "../../Assets/Projects/nyresa.png"
+import huddlecam from "../../Assets/Projects/huddlecam.png"
+import snapdeal from "../../Assets/Projects/snapdeal.png"
+import heybartender from "../../Assets/Projects/heybartender.png"
 
 
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" id="scproj">
       
       <Container>
         <h1 className="project-heading">
@@ -20,7 +23,7 @@ function Projects() {
         </h1>
         
         <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={modesens}
               
@@ -34,7 +37,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={jcrew}
               
@@ -44,11 +47,11 @@ function Projects() {
               "
               stacks="HTML | CSS | JAVASCRIPT"
               ghLink="https://github.com/surya382/rude-jam-2167"
-              demoLink="https://gleeful-crisp-1a6f51.netlify.app/"
+              demoLink="https://frolicking-khapse-19d58f.netlify.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={bonsai}
               
@@ -63,7 +66,7 @@ function Projects() {
           </Col>
           
 
-          <Col md={4} className="project-card">
+          <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={nyresa}
               
@@ -74,6 +77,45 @@ function Projects() {
               stacks="REACT JS | CHAKRA UI | REDUX"
               ghLink="https://github.com/himanshudestiny/numerous-governor-3295"
               demoLink="https://numerous-governor-3295.netlify.app/"              
+            />
+          </Col>
+
+          <Col md={4}  className="project-card">
+            <ProjectCard
+              imgPath={snapdeal}
+              
+              title="Snapdeal.com (Clone)"
+              description="A Full-stack web application for buying clothes and other accessories." 
+              
+              stacks="REACT JS | CHAKRA UI | NODE JS | EXPRESS JS | MONGO DB "
+              ghLink="https://github.com/Maalikq/inexpensive-cause-3321"
+              demoLink="https://grabdeal.vercel.app/"              
+            />
+          </Col>
+
+          <Col md={4}  className="project-card">
+            <ProjectCard
+              imgPath={huddlecam}
+              
+              title="Huddlecam"
+              description="HuddleCam is a video calling app where users can do video calling, 
+              chatting on texts, add todos and a lot more. 
+              "
+              stacks="REACT JS | CHAKRA UI | NODE JS | SOCKET-IO | EXPRESS JS "
+              ghLink="https://github.com/himanshudestiny/HuddleCam"
+              demoLink="https://frontend-oh5pidb6p-himanshudestiny.vercel.app/"              
+            />
+          </Col>
+
+          <Col md={4}  className="project-card">
+            <ProjectCard
+              imgPath={heybartender}
+              
+              title="Hey bartender!"
+              description="A full-stack web application build to help bartenders and recently graduated bartending students."
+              stacks="REACT JS | CHAKRA UI | NODE JS | MONGO DB | EXPRESS JS "
+              ghLink="https://github.com/surya382/heybartender"
+              demoLink="https://jazzy-stardust-9e8f6b.netlify.app/"              
             />
           </Col>
          

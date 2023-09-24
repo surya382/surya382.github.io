@@ -22,16 +22,13 @@ function Home2() {
   };
 
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="schome2">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+        <h1 style={{ fontSize: "2.6em" }}>
               WHO <span className="purple"> I'AM </span>
             </h1>
-
-            
-
+          <Col md={8} className="home-about-description pt-0">
             <p className="home-about-body">
 
             <p>
@@ -39,19 +36,15 @@ function Home2() {
             from <span className="purple"> Satara, Maharashtra.</span>
             
           </p>
-
-            A full-stack web developer trained by Masai School, Bengaluru.
+          A highly motivated and enthusiastic  
+            full-stack web developer trained by Masai School, Bengaluru, with hands-on experience in building web Applications using 
+            HTML, CSS, JS and React.Js on the front-end and NodeJs, Express.Js on the back-end.
              I have a passion to create useful projects and systems which can contribute in everyone's wellbeing.
-              I go to full extent in execution.
+              
             </p>
 
             <div style={{textAlign:"left"}}>
-            <Button
-             className="resbut"                     
-            variant="primary"
-                      
-            style={{ maxWidth: "100px" }}
-          >
+           
             
             <a
             style={{textDecoration:"none"}}
@@ -61,9 +54,16 @@ function Home2() {
             rel="noreferrer"
             onClick={downloadResume}
           >
+               <Button
+             className="resbut"                     
+            variant="primary"
+                
+            style={{ maxWidth: "100px" }}
+          >
             Resume 
+            </Button>
           </a>
-          </Button>
+         
 
           
              
@@ -86,7 +86,7 @@ function Home2() {
                       
         
 
-        <Row>
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>Connect With Me On</h1>
             
@@ -115,7 +115,7 @@ function Home2() {
              
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );

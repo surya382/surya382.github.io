@@ -10,14 +10,14 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
+    <Container fluid className="footer mt-5">
+      <Row style={{display:"flex",justifyContent:"space-between"}}>
         <Col md="4" className="footer-copywright">
           <h3>Designed and Developed by Rahul Suryawanshi</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
+        {/* <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} RS</h3>
-        </Col>
+        </Col> */}
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">

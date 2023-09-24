@@ -9,7 +9,7 @@ import Techstack from "./Techstack";
 
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" id="scskills">
      
       <Container>
        

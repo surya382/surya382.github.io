@@ -11,7 +11,7 @@ import Contacts from "../Contacts/Contacts";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section" id="schome">
         
         <Container className="home-content">
           <Row>
@@ -50,7 +50,7 @@ function Home() {
        
        <Projects/>
 
-       <Contacts/>
+       {/* <Contacts/> */}
     </section>
   );
 }

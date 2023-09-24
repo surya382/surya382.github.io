@@ -18,50 +18,50 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={html} alt="html" width="100%" height="200px"/>
+        <img src={html} alt="html" className="tech-images"/>
         <h4>HTML</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-         <img src={css} alt="css" width="100%" height="200px"/>
+         <img src={css} alt="css" className="tech-images"/>
         <h4>CSS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-          <img src={javascript} alt="js" width="100%" height="200px"/>
+          <img src={javascript} alt="js" className="tech-images"/>
         <h4>JAVASCRIPT</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
 
-      <img src={react} alt="react" width="100%" height="200px"/>
+      <img src={react} alt="react" className="tech-images"/>
         <h4>REACT</h4>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={typescript} alt="ts" width="100%" height="200px"/>
+      <img src={typescript} alt="ts" className="tech-images"/>
         <h4>TYPESCRIPT</h4>
         
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={redux} alt="redux" width="100%" height="200px"/>
+      <img src={redux} alt="redux" className="tech-images"/>
         <h4>REDUX</h4>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={nextjs} alt="mongo" width="100%" height="200px"/>
+      <img src={nextjs} alt="mongo" className="tech-images"/>
         <h4>NEXT JS</h4>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={node} alt="node" width="100%" height="200px"/>
+      <img src={node} alt="node" className="tech-images"/>
         <h4>NODE JS</h4>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={mongodb} alt="mongo" width="100%" height="200px"/>
+      <img src={mongodb} alt="mongo" className="tech-images"/>
         <h4>MONGO DB</h4>
 
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-      <img src={express} alt="mongo" width="100%" height="200px"/>
+      <img src={express} alt="mongo" className="tech-images"/>
         <h4>EXPRESS JS</h4>
 
       </Col>

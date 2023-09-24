@@ -212,8 +212,8 @@ button:focus {
   
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px ;
-  padding-top: 30px;
+  /* padding-bottom: 30px ;
+  padding-top: 30px; */
 }
 
 .home-content {
@@ -259,7 +259,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center ;
-  padding-top: 9em ;
+  /* padding-top: 9em ; */
 }
 
 @media (max-width: 767px) {
@@ -271,7 +271,7 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px ;
+  /* padding-bottom: 70px ; */
   padding-top: 70px ;
   background-color: white;
   border-bottom: #181a27;
@@ -357,8 +357,8 @@ button:focus {
 .footer {
   background-color: teal;
   bottom: 0 ;
-  padding-top: 10px ;
-  padding-bottom: 8px ;
+  padding-top: 3px ;
+  padding-bottom: 3px ;
 }
 .footer-copywright {
   text-align: center;
@@ -366,7 +366,8 @@ button:focus {
 
 .footer-body {
   z-index: 1;
-  text-align: center ;
+  /* text-align: center ; */
+  
 }
 
 @media (max-width: 767px) {
@@ -376,6 +377,7 @@ button:focus {
 
   .footer-body {
     text-align: center ;
+   
   }
 }
 
@@ -389,37 +391,39 @@ button:focus {
   margin-top: 0.5em ;
   margin-bottom: 0.5em ;
   padding: 0 ;
+  width: fit-content;
+  float: right;
 }
 
 
 
 .project-section {
   position: relative ;
-  padding-top: 150px;
-  padding-bottom: 30px ;
+  padding-top: 70px;
+  /* padding-bottom: 30px ; */
   
 }
 
 .project-card {
-  padding-top: 50px ;
-  padding-bottom: 50px ;
+  padding-top: 15px ;
+  /* padding-bottom: 50px ; */
   padding-left: 25px ;
   padding-right: 25px ;
-  height: auto ;
+  height: auto;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgb(211, 207, 207) ;
+  box-shadow: 0 4px 5px 3px rgb(207, 211, 211) ;
   color: black ;
   background-color: transparent ;
   opacity: 0.9 ;
   transition: all 0.5s ease 0s ;
-  height: 100% ;
+
 }
 .project-card-view:hover {
   transform: scale(1.02) ;
   overflow: hidden ;
-  box-shadow: 0 4px 4px 5px rgb(211, 207, 207) ;
+  box-shadow: 0 4px 4px 5px rgb(26, 155, 144) ;
 }
 
 
@@ -454,8 +458,8 @@ button:focus {
 
 .about-section {
   position: relative ;
-  padding-top: 150px ;
-  padding-bottom: 30px ;
+  padding-top: 80px ;
+  /* padding-bottom: 30px ; */
  
   color: black ;
 }
@@ -465,11 +469,12 @@ button:focus {
   margin: 15px ;
   padding: 10px ;
   opacity: 0.93 ;
-  border: 1.7px solid teal ;
-  vertical-align: middle ;
+  /* border: 1.7px solid teal ; */
+  /* vertical-align: middle ; */
   text-align: center ;
   border-radius: 5px;
-  display: table ;
+  width: 10%;
+  /* display: table ; */
   box-shadow: 4px 5px 4px 3px rgba(7, 143, 167, 0.137) ;
   overflow: hidden ;
   transition: all 0.4s ease 0s ;
@@ -479,6 +484,10 @@ button:focus {
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px ;
+  }
+  .footer-icons{
+    float: none;
+    margin: auto;
   }
 }
 
@@ -544,7 +553,10 @@ button:focus {
 
 
 
-
+/* .tect-icons-position{
+  height: 200px;
+  width: 100%;
+} */
 
 
 
@@ -564,7 +576,43 @@ button:focus {
   margin: auto;
 }
 
+.tags{
+  text-decoration: none;
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
+}
+.tags>p{
+  cursor: pointer;
+}
+.tech-images{
+  height: 200px;
+  width: 100%;
+}
+
+.tags:hover{
+  background-color: #209a9e;
+  color: #fff;
+  border-radius: 10px;
+}
+@media (min-width:766px) and  (max-width: 992px){
+  .tech-icons > h4{
+    font-size: 18px;
+    font-weight: bold;
+    
+      }
+}
+
 @media (max-width: 500px) {
+
+  .tech-icons > h4{
+font-size: 14px;
+font-weight: bold;
+
+  }
+.tech-images{
+height: 140px;
+}
 
  .contsec{
   width: 70%;
@@ -577,10 +625,9 @@ button:focus {
     gap: 10px;
   }
 
-  
-
-
-
+.tags{
+font-size:17px;
+}  
 }
 
 @media (min-width:500px) and  (max-width: 767px) {

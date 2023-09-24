@@ -1,98 +1,59 @@
 
-import { FiAtSign,FiPhone,FiMapPin } from "react-icons/fi";
+import { FiAtSign, FiPhone, FiMapPin } from "react-icons/fi";
 
-import {Col} from "react-bootstrap"
-import { Box, Flex } from "@chakra-ui/react";
+import { Button, Col, Container, Form, Image, Row } from "react-bootstrap"
+
 
 
 
 function Contacts() {
-   
-    return (
-        
-            <div className="project-heading" style={{marginTop:"160px",marginBottom:"100px"}} >
-                <h1 >Contact <strong className="purple">Me </strong></h1>
-                
-                  
 
-                    {/* <div >
-                        <a
-                            href={`mailto:suryawanshirahul382@gmail.com`}
-                            className='personal-details'
-                        >
-                            <div className="sym" style={{color:"teal"}}>
-                                <FiAtSign />
-                            </div>
-                            <p className="email">
-                                suryawanshirahul382@gmail.com
-                            </p>
-                        </a>
-                        <a
-                            href={`tel:8169145094`}
-                            className='personal-details'
-                        >
-                            <div style={{color:"teal"}}>
-                                <FiPhone />
-                            </div>
-                            <p >
-                                8169145094
-                            </p>
-                        </a>
-                        <div className='personal-details'>
-                            <div style={{color:"teal"}}>
-                                <FiMapPin />
-                            </div>
-                            <p >
-                                Satara,Maharashtra
-                            </p>
-                        </div>
 
-                        </div> */}
-                     <Box className="contsec" mt="50px"  >
-                     <a
-                            href={`mailto:suryawanshirahul382@gmail.com`}
-                            className='personal-details'
-                        >
-                            <div className="sym" style={{color:"teal"}}>
-                                <FiAtSign />
-                            </div>
-                            <p className="email">
-                                suryawanshirahul382@gmail.com
-                            </p>
-                        </a>
-                        
 
-                        <a
-                            href={`tel:8169145094`}
-                            className='personal-details'
-                        >
-                            <div style={{color:"teal"}}>
-                                <FiPhone />
-                            </div>
-                            <p >
-                                8169145094
-                            </p>
-                        </a>
+  return (
 
-                        <div className='personal-details'>
-                            <div style={{color:"teal"}}>
-                                <FiMapPin />
-                            </div>
-                            <p >
-                                Satara,Maharashtra
-                            </p>
-                        </div>
+    <div className="project-heading " id="sccontact">
+      <h1 >Contact <strong className="purple">Me </strong></h1>
 
-                     </Box>
+      <Container style={{ marginTop: "20px", border: "1px solid teal", borderRadius: "10px" }}>
+        <Row>
 
-                        
+          <a className="tags" href="mailto:suryawanshirahul382@gmail.com/" target="_blank" rel="noopener noreferrer">
+            <Image width="27px" src="https://www.pngitem.com/pimgs/m/46-463734_gmail-logo-black-white-hd-png-download.png" alt="Gmail" className="mr-3" />
+            <p>suryawanshirahul382@gmail.com</p>
+          </a>
 
-                        </div>
+          <a className="tags" href="https://github.com/surya382" target="_blank" rel="noopener noreferrer">
+            <Image src="https://img.icons8.com/material-rounded/24/000000/github.png" alt="Github" className="mr-3" />
+            <p >Github</p>
+          </a>
 
-                      
-                
-      
-    )
+          <a className="tags" href="tel:8169145094" target="_blank" rel="noopener noreferrer">
+            <Image src="https://img.icons8.com/material-rounded/24/000000/phone--v1.png" alt="Phone" className="mr-3" />
+            <p >+91 8169145094</p>
+          </a>
+          <a className="tags" href="https://www.linkedin.com/in/rahul-suryawanshi-31519821b/" target="_blank" rel="noopener noreferrer">
+            <Image src="https://img.icons8.com/material-rounded/24/000000/linkedin.png" alt="LinkedIn" />
+            <p >Linkedin</p>
+          </a>
+
+
+        </Row>
+      </Container>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+  )
 }
 
 export default Contacts;

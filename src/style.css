@@ -28,7 +28,7 @@ button:focus {
 
 
 .sticky {
-  background-color: gainsboro ;
+  background-color: rgb(220, 220, 220) ;
   transition: all 0.3s ease-out 0s ;
   
   backdrop-filter: blur(15px) ;

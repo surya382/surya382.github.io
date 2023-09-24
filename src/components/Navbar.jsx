@@ -71,7 +71,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                
+              
                 onClick={() => scrollToFunction("schome2")}
               >
                 About

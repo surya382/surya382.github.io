@@ -22,7 +22,7 @@ function Projects() {
           My <strong className="purple">Projects</strong>
         </h1>
         
-        <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "left", paddingBottom: "50px" }}>
           <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={modesens}

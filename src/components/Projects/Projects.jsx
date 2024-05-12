@@ -118,7 +118,6 @@ function Projects() {
               demoLink="https://heybarty.vercel.app/"              
             />
           </Col>
-         
         </Row>
       </Container>
     </Container>

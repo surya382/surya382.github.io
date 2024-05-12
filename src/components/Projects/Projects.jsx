@@ -115,7 +115,7 @@ function Projects() {
               description="A full-stack web application build to help bartenders and recently graduated bartending students."
               stacks="REACT JS | CHAKRA UI | NODE JS | MONGO DB | EXPRESS JS "
               ghLink="https://github.com/surya382/heybartender"
-              demoLink="https://jazzy-stardust-9e8f6b.netlify.app/"              
+              demoLink="https://heybarty.vercel.app/"              
             />
           </Col>
          

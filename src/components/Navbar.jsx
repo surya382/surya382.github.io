@@ -81,6 +81,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 
+                onClick={() => scrollToFunction("experianceDiv")}
+              >
+                {" "}
+                Work Experiance
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                
                 onClick={() => scrollToFunction("scproj")}
               >
                 {" "}

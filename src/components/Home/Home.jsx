@@ -7,6 +7,7 @@ import Type from "./Type";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
+import WorkExperiance from "../WorkExperiance/WorkExperiance";
 
 function Home() {
   return (
@@ -47,7 +48,7 @@ function Home() {
       <Home2 />
 
       <About/>
-       
+       <WorkExperiance/>
        <Projects/>
 
        {/* <Contacts/> */}

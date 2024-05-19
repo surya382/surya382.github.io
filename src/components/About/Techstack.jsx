@@ -12,7 +12,7 @@ import redux from "../../Assets/techlogo/redux.svg"
 import typescript from "../../Assets/techlogo/typescript.svg"
 import express from "../../Assets/techlogo/express.svg"
 import nextjs from "../../Assets/techlogo/nextjs.svg"
-
+import bootstrap from "../../Assets/techlogo/bootstrap.png"
 
 function Techstack() {
   return (
@@ -41,8 +41,8 @@ function Techstack() {
         
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-      <img src={redux} alt="redux" className="tech-images"/>
-        <h4>REDUX</h4>
+      <img src={bootstrap} alt="bootstrap" style={{aspectRatio:"3/2",objectFit:"contain"}} className="tech-images"/>
+        <h4>BOOTSTRAP</h4>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">

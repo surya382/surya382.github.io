@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button";
 
 import {
   AiFillGithub,
- 
+
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -25,66 +25,89 @@ function Home2() {
     <Container fluid className="home-about-section" id="schome2">
       <Container>
         <Row>
-        <h1 style={{ fontSize: "2.6em" }}>
-              WHO <span className="purple"> I'AM </span>
-            </h1>
+          <h1 style={{ fontSize: "2.6em" }}>
+            WHO <span className="purple"> I'AM </span>
+          </h1>
           <Col md={8} className="home-about-description pt-0">
             <p className="home-about-body">
 
-            <p>
-            Hi Everyone, I am <span className="purple">Rahul Suryawanshi </span>
-            from <span className="purple"> Satara, Maharashtra.</span>
-            
-          </p>
-          A highly motivated and enthusiastic  
-            full-stack web developer trained by Masai School, Bengaluru, with hands-on experience in building web Applications using 
-            HTML, CSS, JS and React.Js on the front-end and NodeJs, Express.Js on the back-end.
-             I have a passion to create useful projects and systems which can contribute in everyone's wellbeing.
-              
+              <p>
+                Hi Everyone, I am <span className="purple">Rahul Suryawanshi </span>
+                from <span className="purple"> Satara, Maharashtra.</span>
+
+              </p>
+              A highly motivated and enthusiastic
+              full-stack web developer trained by Masai School, Bengaluru, with hands-on experience in building web Applications using
+              HTML, CSS, JS and React.Js on the front-end and NodeJs, Express.Js on the back-end.
+              I have a passion to create useful projects and systems which can contribute in everyone's wellbeing.
             </p>
 
-            <div style={{textAlign:"left"}}>
-           
-            
-            <a
-            style={{textDecoration:"none"}}
-            href={pdf}
-            download={true}
-            target={"_blank"}
-            rel="noreferrer"
-            onClick={downloadResume}
-          >
-               <Button
-             className="resbut"                     
-            variant="primary"
-                
-            style={{ maxWidth: "100px" }}
-          >
-            Resume 
-            </Button>
-          </a>
-         
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
 
-          
-             
-          </div>
+
+              <a
+                style={{ textDecoration: "none" }}
+                href={pdf}
+                download={true}
+                target={"_blank"}
+                rel="noreferrer"
+                onClick={downloadResume}
+              >
+                <Button
+                  className="resbut"
+                  variant="primary"
+
+                  style={{ maxWidth: "100px" }}
+                >
+                  Resume
+                </Button>
+              </a>
+
+
+              <ul>
+                <li className="social-icons" style={{ paddingLeft: "0px" }}>
+                  <a
+                    href="https://github.com/surya382"
+                    style={{ color: "teal" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillGithub size="25px" />
+                  </a>
+                </li>
+
+                <li className="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/rahul-suryawanshi-31519821b/"
+                    style={{ color: "teal" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn size="25px" />
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
 
 
           </Col>
 
 
-          
+
           <Col md={4} className="myAvtar">
-            
-              <img src={myImg} style={{borderRadius:"100%",height:"300px",width:"250px"}} className="img-fluid" alt="avatar" />
-            
+
+            <img src={myImg} style={{ borderRadius: "100%", height: "300px", width: "250px" }} className="img-fluid" alt="avatar" />
+
           </Col>
 
-          
+
 
         </Row>
-                      
-        
+
+
 
         {/* <Row>
           <Col md={12} className="home-about-social">

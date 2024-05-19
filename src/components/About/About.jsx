@@ -16,13 +16,8 @@ function About() {
         <h1 className="project-heading" style={{marginBottom:"25px"}}>
           Professional <strong className="purple">Skillset </strong>
         </h1>
-
         <Techstack />
-
-
-        <Github/>
-
-       
+        {/* <Github/> */}      
       </Container>
     </Container>
   );

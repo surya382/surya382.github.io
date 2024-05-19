@@ -23,7 +23,7 @@ function Projects() {
         </h1>
         
         <Row style={{ justifyContent: "left", paddingBottom: "50px" }}>
-          <Col md={4}  className="project-card">
+          {/* <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={modesens}
               
@@ -35,7 +35,7 @@ function Projects() {
               ghLink="https://github.com/surya382/nutty-dinner-4204"
               demoLink="https://dainty-begonia-81897f.netlify.app/"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4}  className="project-card">
             <ProjectCard
@@ -47,11 +47,11 @@ function Projects() {
               "
               stacks="HTML | CSS | JAVASCRIPT"
               ghLink="https://github.com/surya382/rude-jam-2167"
-              demoLink="https://frolicking-khapse-19d58f.netlify.app/"
+              demoLink="https://jcrew-com.vercel.app/"
             />
           </Col>
 
-          <Col md={4}  className="project-card">
+          {/* <Col md={4}  className="project-card">
             <ProjectCard
               imgPath={bonsai}
               
@@ -63,7 +63,7 @@ function Projects() {
               ghLink="https://github.com/surya382/subdued-neck-2197"
               demoLink="https://heartfelt-boba-41e001.netlify.app/"              
             />
-          </Col>
+          </Col> */}
           
 
           <Col md={4}  className="project-card">

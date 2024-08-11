@@ -36,10 +36,11 @@ function Home2() {
                 from <span className="purple"> Satara, Maharashtra.</span>
 
               </p>
-              A highly motivated and enthusiastic
-              full-stack web developer trained by Masai School, Bengaluru, with hands-on experience in building web Applications using
-              HTML, CSS, JS and React.Js on the front-end and NodeJs, Express.Js on the back-end.
-              I have a passion to create useful projects and systems which can contribute in everyone's wellbeing.
+              I am a highly motivated and enthusiastic Full Stack Web Developer with
+              over a year of experience working in a dynamic, product-based startup environment.
+              Trained by Masai School, Bengaluru, I have hands-on experience in building
+              scalable and performance-focused web applications using modern web development technologies,
+              including HTML, CSS, JavaScript, React.js, and Next.js on the front-end, and Node.js, Express.js, TypeScript, MongoDB, and SQL on the back-end.
             </p>
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>

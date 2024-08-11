@@ -695,7 +695,7 @@ button:focus {
 
 .experience-card {
   position: relative;
-  width: 40%;
+  width: 100%;
   background-color: white;
   box-shadow: 0 10px 30px -15px #0003;
   border-radius: 10px;

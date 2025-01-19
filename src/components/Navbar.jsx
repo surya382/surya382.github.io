@@ -45,9 +45,9 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container style={{margin:"0px 20px"}}>
+      <Container style={{ margin: "0px 20px", maxWidth: "100%" }}>
         <Navbar.Brand href="/" className="d-flex">
-          <img src="https://st2.depositphotos.com/5943796/11433/v/450/depositphotos_114331868-stock-illustration-initial-letter-rs-red-swoosh.jpg" style={{borderRadius:"20px"}} className="img-fluid logo" alt="brand" />
+          <img src="https://st2.depositphotos.com/5943796/11433/v/450/depositphotos_114331868-stock-illustration-initial-letter-rs-red-swoosh.jpg" style={{ borderRadius: "100%", width: "30px" }} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -62,16 +62,16 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link  onClick={() => scrollToFunction("schome")}>
-                 Home
+              <Nav.Link style={{ padding: "0px" }} onClick={() => scrollToFunction("schome")}>
+                Home
               </Nav.Link>
 
-              
+
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-              
+                style={{ padding: "0px" }}
                 onClick={() => scrollToFunction("schome2")}
               >
                 About
@@ -80,7 +80,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                
+                style={{ padding: "0px" }}
                 onClick={() => scrollToFunction("experianceDiv")}
               >
                 {" "}
@@ -88,32 +88,32 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
-                
+                style={{ padding: "0px" }}
                 onClick={() => scrollToFunction("scproj")}
               >
                 {" "}
                 Projects
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-           
+
 
 
             <Nav.Item>
               <Nav.Link
-               
+                style={{ padding: "0px" }}
                 onClick={() => scrollToFunction("scskills")}
               >
                 {" "}
                 Skills
               </Nav.Link>
             </Nav.Item>
-             
+
             <Nav.Item>
               <Nav.Link
-                
+                style={{ padding: "0px" }}
                 onClick={() => scrollToFunction("sccontact")}
               >
                 {" "}
@@ -121,30 +121,29 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-           <div style={{marginTop:"5px",marginLeft:"15px"}}>
-            
-           
-                      <a
-            style={{textDecoration:"none"}}
-            href={pdf}
-            download={true}
-            target={"_blank"}
-            rel="noreferrer"
-            onClick={downloadResume} 
-          >
-            <Button
-                      className="resbut"
-                      variant="primary"
-                     
-                      style={{ maxWidth: "100px" }}
-                    >
-            Resume 
-            </Button>
-          </a>
-                    
-            
-           </div>
-          
+            <div style={{ marginLeft: "25px" }}>
+
+
+              <a
+                style={{ textDecoration: "none" }}
+                href={pdf}
+                download={true}
+                target={"_blank"}
+                rel="noreferrer"
+                onClick={downloadResume}
+              >
+                <Button
+                  className="resbut"
+                  variant="primary"
+                  style={{ maxWidth: "100px", padding: "0px 10px", borderRadius: "14px" }}
+                >
+                  Resume
+                </Button>
+              </a>
+
+
+            </div>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

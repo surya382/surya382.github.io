@@ -37,12 +37,9 @@ export default function ExperianceCard({cardInfo}) {
           </div>
   
           <img
-            // crossOrigin={"anonymous"}
-            
             className="experience-roundedimg"
             src={cardInfo.companylogo}
             alt={cardInfo.company}
-            // onLoad={() => getColorArrays()}
           />
         </div>
         <div className="experience-text-details">
@@ -67,7 +64,7 @@ export default function ExperianceCard({cardInfo}) {
           >
             {cardInfo.desc}
           </p>
-          <ul style={{textAlign:"left"}}>
+          <ul style={{textAlign:"left",fontSize:"1.2em"}}>
             <GetDescBullets descBullets={cardInfo.descBullets} />
           </ul>
         </div>

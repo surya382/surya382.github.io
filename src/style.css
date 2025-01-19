@@ -129,7 +129,8 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 40px;
+  font-size: 18px;
 }
 
 .navbar-nav .nav-item a {
@@ -229,12 +230,12 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em;
+  font-size: 2em;
   padding-left: 50px;
 }
 
 .heading-name {
-  font-size: 2.5em;
+  font-size: 2.1em;
   padding-left: 45px;
 }
 
@@ -243,13 +244,13 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em;
+  font-size: 2em;
   color: teal;
   font-weight: 600;
 }
 
 .Typewriter__cursor {
-  font-size: 2.4em;
+  font-size: 2em;
   color: teal;
 }
 
@@ -458,6 +459,7 @@ button:focus {
   color: #fff !important;
   background-color: teal !important;
   border-color: teal;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .btn:focus {
@@ -467,7 +469,7 @@ button:focus {
 
 .project-heading {
   color: black;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 500;
   padding-top: 10px;
 }
@@ -491,11 +493,11 @@ button:focus {
   /* vertical-align: middle ; */
   text-align: center;
   border-radius: 5px;
-  width: 10%;
+  width: 64% !important;
   /* display: table ; */
   box-shadow: 4px 5px 4px 3px rgba(7, 143, 167, 0.137);
   overflow: hidden;
-  transition: all 0.4s ease 0s;
+  /* transition: all 0.4s ease 0s; */
 
 }
 
@@ -511,8 +513,8 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05);
-  overflow: hidden;
+  /* transform: scale(1.05);
+  overflow: hidden; */
 
 }
 
@@ -607,9 +609,17 @@ button:focus {
   gap: 5px;
   padding: 8px;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   justify-content: center;
 
+}
+
+.contactPart{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 .tags>p {
@@ -617,7 +627,7 @@ button:focus {
 }
 
 .tech-images {
-  height: 200px;
+  height: 101px;
   width: 100%;
 }
 
@@ -662,6 +672,9 @@ button:focus {
     font-size: 17px;
     width: 100%;
   }
+  .contactPart{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 @media (min-width:500px) and (max-width: 767px) {
@@ -700,7 +713,7 @@ button:focus {
   box-shadow: 0 10px 30px -15px #0003;
   border-radius: 10px;
   border: 1px solid hsla(0, 0%, 83%, .397);
-  transition: all 0.5s ease 0s;
+  /* transition: all 0.5s ease 0s; */
 
 }
 
@@ -713,10 +726,10 @@ button:focus {
 } */
 
 .experience-card:hover {
-  /* box-shadow: 0 4px 4px 5px rgb(26, 155, 144); */
+  /* box-shadow: 0 4px 4px 5px rgb(26, 155, 144);
   transform: scale(1.02);
   overflow: hidden;
-  box-shadow: 4px 5px 4px 3px rgba(7, 143, 167, 0.137);
+  box-shadow: 4px 5px 4px 3px rgba(7, 143, 167, 0.137); */
 }
 
 .experience-banner {
@@ -730,7 +743,7 @@ button:focus {
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
-  height: 11rem;
+  height: 6rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -738,13 +751,8 @@ button:focus {
 
 .experience-blurred_div {
   position: absolute;
-  background: #083810;
-  /* -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px); */
-  /* filter: blur(5px); */
-  height: 11rem;
+  background: #dcdddd;
+  height: 6rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -754,7 +762,7 @@ button:focus {
 .experience-div-company {
   position: absolute;
   background: transparent;
-  height: 9rem;
+  height: 5rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -781,7 +789,7 @@ button:focus {
   object-fit: cover;
   left: 0;
   right: 0;
-  top: 7rem;
+  top: 4rem;
   margin-left: auto;
   margin-right: auto;
   width: 8rem;
@@ -822,6 +830,12 @@ button:focus {
   margin-top: 2rem;
 }
 
+.stacks{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  padding-bottom: 50px;
+}
 /* Media Query */
 
 @media (max-width: 1380px) {
@@ -839,12 +853,15 @@ button:focus {
   }
 
   .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 
 @media (max-width: 768px) {
+  .stacks{
+    grid-template-columns: repeat(2,1fr);
+  }
   .experience-text-role {
     font-size: 22px;
   }

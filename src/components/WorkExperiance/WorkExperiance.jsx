@@ -1,23 +1,29 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import ExperianceCard from './ExperianceCard';
+import vmLogo from '../../../src/Assets/vmlogo.webp'
 
 const WorkExperiance = () => {
   const workExperiences = {
     display: true, //Set it to true to show workExperiences Section
     experience: [
       {
-        role: "Intern + SDE 1",
-        company: "Vmedulife",
-        companylogo: "https://img.utdstc.com/icon/967/fd3/967fd3d33c5ae82d0e7d781cfb03723f12dd39ccdfc27ac88f0985780908e72f:100",
+        role: "Intern + Full stack developer",
+        company: "Vmedulife Software",
+        companylogo: vmLogo,
         date: "May 2023 – Present",
         desc: "ERP Software.",
         descBullets: [
-          "Improved page load time by using performance optimization techniques.",
-          "Reduced API response time through efficient use of asynchronous operations.",
+          "Led the development of an Academic Planning module for 10,000+ users collaborating with teams to improve academic efficiency.",
+          "Developed a feedback module that increased engagement by 25%, streamlining the feedback process for students and faculty",
           "Resolved critical production bugs that improved system stability and reduced downtime.",
-          "Led the development of an Academic Planning module, coordinating with a cross-functional team to deliver a solution that enhanced academic efficiency.",
-          "Developed a module for collecting online feedback from students and faculty, improving the feedback process and engagement.",
+          `Implemented an import feature that allows faculty members to upload Excel files
+          containing academic data. Developed functionality to parse and validate the data,
+          ensuring accuracy before it is inserted into the database.This streamlined data
+          entry, reducing manual effort and ensuring consistent and error - free information
+          storage.
+          `,
+          "Integrated and optimized third-party libraries to enhance app functionality and reduce development time.",
           "Successfully delivered client requirements by developing and implementing solutions ahead of deadlines, improving client satisfaction."
         ]
       },
@@ -29,7 +35,7 @@ const WorkExperiance = () => {
     <Container fluid className="experianceSec container" id="experianceDiv">
 
       <div>
-        <h1>Work <strong className="purple">Experiance</strong></h1>
+        <h1 style={{ fontSize: "2em" }}>Work <strong className="purple">Experiance</strong></h1>
         {/* <h1 className="experience-heading">Experiences</h1> */}
         <div className="experience-cards-div">
           {workExperiences.experience.map((card, i) => {

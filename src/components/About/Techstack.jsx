@@ -16,59 +16,59 @@ import bootstrap from "../../Assets/techlogo/bootstrap.png"
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+    <div className="stacks" >
+      <Col xs={4} md={2} className="tech-icons" >
         <img src={html} alt="html" className="tech-images"/>
-        <h4>HTML</h4>
+        <h6>HTML</h6>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
          <img src={css} alt="css" className="tech-images"/>
-        <h4>CSS</h4>
+        <h6>CSS</h6>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
           <img src={javascript} alt="js" className="tech-images"/>
-        <h4>JAVASCRIPT</h4>
+        <h6>JAVASCRIPT</h6>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
 
       <img src={react} alt="react" className="tech-images"/>
-        <h4>REACT</h4>
+        <h6>REACT</h6>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <img src={typescript} alt="ts" className="tech-images"/>
-        <h4>TYPESCRIPT</h4>
+        <h6>TYPESCRIPT</h6>
         
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <img src={bootstrap} alt="bootstrap" style={{aspectRatio:"3/2",objectFit:"contain"}} className="tech-images"/>
-        <h4>BOOTSTRAP</h4>
+        <h6>BOOTSTRAP</h6>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <img src={nextjs} alt="mongo" className="tech-images"/>
-        <h4>NEXT JS</h4>
+        <h6>NEXT JS</h6>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <img src={node} alt="node" className="tech-images"/>
-        <h4>NODE JS</h4>
+        <h6>NODE JS</h6>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <img src={mongodb} alt="mongo" className="tech-images"/>
-        <h4>MONGO DB</h4>
+        <h6>MONGO DB</h6>
 
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
       <img src={express} alt="mongo" className="tech-images"/>
-        <h4>EXPRESS JS</h4>
+        <h6>EXPRESS JS</h6>
 
       </Col>
 
       
       
-    </Row>
+    </div>
   );
 }
 

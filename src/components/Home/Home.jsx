@@ -49,7 +49,7 @@ function Home() {
 
       <About/>
        <WorkExperiance/>
-       <Projects/>
+       {/* <Projects/> */}
 
        {/* <Contacts/> */}
     </section>

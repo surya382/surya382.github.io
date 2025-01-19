@@ -11,7 +11,7 @@ function Contacts() {
   return (
 
     <div className="project-heading " id="sccontact">
-      <h1 >Contact <strong className="purple">Me </strong></h1>
+      <h1 style={{fontSize:"2rem"}}>Contact <strong className="purple">Me </strong></h1>
 
       {/* <Container style={{ marginTop: "20px", border: "1px solid teal", borderRadius: "10px" }}>
         <Row>
@@ -38,7 +38,7 @@ function Contacts() {
 
         </Row>
       </Container> */}
-      <Container style={{display:"grid",gridTemplateColumns:"repeat(1,1fr)",gap:"25px",justifyItems:"center",marginTop:"20px"}}>
+      <Container className="contactPart">
       <a className="tags" href="mailto:suryawanshirahul382@gmail.com/" target="_blank" rel="noopener noreferrer">
             {/* <Image width="27px" src="https://www.pngitem.com/pimgs/m/46-463734_gmail-logo-black-white-hd-png-download.png" alt="Gmail" className="mr-3" /> */}
             <span><CgMail/></span>

@@ -25,7 +25,7 @@ function Home2() {
     <Container fluid className="home-about-section" id="schome2">
       <Container>
         <Row>
-          <h1 style={{ fontSize: "2.6em" }}>
+          <h1 style={{ fontSize: "2em" }}>
             WHO <span className="purple"> I'AM </span>
           </h1>
           <Col md={8} className="home-about-description pt-0">
@@ -36,11 +36,12 @@ function Home2() {
                 from <span className="purple"> Satara, Maharashtra.</span>
 
               </p>
-              I am a highly motivated and enthusiastic Full Stack Web Developer with
-              over a year of experience working in a dynamic, product-based startup environment.
-              Trained by Masai School, Bengaluru, I have hands-on experience in building
-              scalable and performance-focused web applications using modern web development technologies,
-              including HTML, CSS, JavaScript, React.js, and Next.js on the front-end, and Node.js, Express.js, TypeScript, MongoDB, and SQL on the back-end.
+              I am an experienced Full Stack Web Developer working in a dynamic,
+              product-based startup environment. A graduate of Masai School,
+              Bengaluru, I have hands-on experience in developing scalable,
+              performance-driven web applications. My expertise spans modern web technologies,
+              including HTML, CSS, JavaScript, React.js, and Next.js on the front-end, and Node.js,
+              Express.js, TypeScript, MongoDB, and SQL on the back-end.
             </p>
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -58,7 +59,7 @@ function Home2() {
                   className="resbut"
                   variant="primary"
 
-                  style={{ maxWidth: "100px" }}
+                  style={{ maxWidth: "100px",borderRadius:"4px",padding:"0px 10px"}}
                 >
                   Resume
                 </Button>
@@ -73,7 +74,7 @@ function Home2() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <AiFillGithub size="25px" />
+                    <AiFillGithub size="18px" />
                   </a>
                 </li>
 
@@ -84,32 +85,18 @@ function Home2() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaLinkedinIn size="25px" />
+                    <FaLinkedinIn size="18px" />
                   </a>
                 </li>
 
               </ul>
 
             </div>
-
-
-
           </Col>
-
-
-
           <Col md={4} className="myAvtar">
-
-            <img src={myImg} style={{ borderRadius: "100%", height: "300px", width: "250px" }} className="img-fluid" alt="avatar" />
-
+            <img src={myImg} style={{ borderRadius: "100%", height: "250px", width: "250px" }} className="img-fluid" alt="avatar" />
           </Col>
-
-
-
         </Row>
-
-
-
         {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>Connect With Me On</h1>
